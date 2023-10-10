@@ -1,26 +1,102 @@
-body{
-    background-color: #878282;
-    display: flex;
-    justify-content: center;
-  
-  }
-  .box{
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  img {
-    margin-bottom: 15px;
-  }
-  .but{
-    background-color: #207f06;
-    color: white;
-    border-radius: 2px;
-    cursor: pointer;
-  }
-  span{
-    color: #207f06;
-  }
-  p {
-    font-weight: bold;
-  }
+.container{
+  width: 1440px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 100%);
+  margin: auto;
+  padding-bottom: 20px;
+}
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.text{
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  -moz-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  margin-top: 10px;
+  background-color: rgba(77, 112, 253, 0.5);
+  width: 200px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.text:hover{
+  transform: scale(1.1);
+  transition: transform 1.0s;
+}
+
+
+.iphone{
+  -webkit-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  -moz-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  border-radius: 20px;
+  background: rgb(27,137,252);
+  background: linear-gradient(0deg, rgba(27,137,252,1) 0%, rgba(94,179,227,1) 20%, rgba(255,255,255,1) 100%);
+  margin-left: 10px;
+  text-align: center;
+
+}
+.lenta{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 10px;
+
+}
+.text2{
+  -webkit-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  -moz-box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  box-shadow: 2px 6px 9px 1px rgba(34, 60, 80, 0.13);
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  background-color: rgba(77, 112, 253, 0.5);
+  margin-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 20px;
+  width: 98%;
+  padding-left: 10px;
+  margin-bottom: 20px
+
+
+
+}
+.text_iphone1{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  margin-top: -15px;
+
+}
+
+.text_iphone{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.price{
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+button{
+  margin-left: 10px;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: rgb(49, 24, 237);
+  text-align: center;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+  transition: transform 1.0s;
+}
+.rub{
+  font-size: 50px;
+}
