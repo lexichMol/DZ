@@ -1,37 +1,37 @@
-.container {
-    background-color: aqua;
-    width: 500px;
-    margin: auto;
-  }
+body{
+  background-color: black;
+}
+.container{
+  background-color: rgb(228, 223, 215);
+  width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1300px;
+  height: 300px;
+  margin: auto;
   
-  .in{
-    margin-bottom: 20px;
-    margin: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    width: 400px;
-  }
-  .reg {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-  }
-  .btn{
-    margin: auto;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    width: 180px;
-    border-radius: 20px;
-    background-color: rgb(0, 174, 255);
-    margin-bottom: 20px;
-  }
-  .text{
-    text-align: center;
-  }
-  
-  .text1 {
-    margin-left: 47px;
-  }
-  p {
-    font-weight: bolder;
-  }
+}
+.game{
+  background-color: rgb(145, 145, 145);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 700px;
+  height: 300px;
+  position: relative;
+
+}
+.menu{
+  background-color: rgb(145, 145, 145);
+  margin-bottom: 20px;
+
+}
+#square{
+  position: absolute;
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+}
