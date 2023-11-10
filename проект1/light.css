@@ -1,0 +1,37 @@
+.container{
+    background: rgb(27,137,252);
+    background: linear-gradient(180deg, rgba(27,137,252,1) 0%, rgba(94,227,129,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.menu_bt{
+    background-color: rgb(8, 255, 173);
+}
+
+
+.menu_bt2{
+
+    background-color: rgb(8, 255, 173);
+}
+
+select{
+    background-color: rgb(8, 255, 173);
+}
+
+.containerpopup{
+    background: rgb(27,137,252);
+    background: linear-gradient(180deg, rgba(27,137,252,1) 0%, rgba(94,227,129,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.text2popup{
+    background-color: rgb(8, 255, 173);
+}
+.btnpopup{
+    background-color: rgb(8, 255, 173);
+}
+body{
+    background-color: white;
+}
+#theme-button{
+    background-color: aquamarine;
+}
+

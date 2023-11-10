@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="light.css" id="theme-link">
+  <script src="script1.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <p>Новости</p>
+            <button id="theme-button" onclick="ChangeTheme()">Change theme</button>
+            <p onclick="func_pop_up()">Профиль</p>
+        </div>
+        <div class="container2">
+            <span class="line">☰</span>
+            <div class="container3">
+                <div class = menu>
+                    <button class="menu_bt">Главная</button>
+                    <button class="menu_bt">Новости</button>
+                    <button class="menu_bt">Фильмы</button>
+                    <button class="menu_bt">Контакты</button>
+                </div>
+                <div>
+                    <img src="https://sun9-67.userapi.com/impf/c845017/v845017059/82d2f/jrX80dWxiPI.jpg?size=1280x540&quality=96&sign=e143605a193edeee8febb8b0be3cec64&type=album" class="banner">
+                </div>
+                <div class="menu2">
+                    <button class="menu_bt2">Фильмы</button>
+                    <button class="menu_bt2">Сериалы</button>
+                    <button class="menu_bt2">Мультфильмы</button>
+                    <button class="menu_bt2">Что нового</button>
+                </div>
+                <div class="filter">
+                    <span>Фильтер</span>
+                    <select>
+                        <option value="data">дата</option>
+                        <option value="popular">популярность</option>
+                        <option value="views">число просмотров</option>
+                      </select>
+                </div>
+                <div class="film1">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/45481b09-e993-4c53-b0c3-9a052af59e6a/300x450">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/8ab9a119-dd74-44f0-baec-0629797483d7/300x450">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/2e51cb8b-fd51-4166-84a2-63559733baac/300x450">
+                </div>
+                <div class="film2">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/731c4031-7389-44f4-8c15-f9f4e3b0ed90/300x450">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/1d74502b-c845-4526-bcb2-d739ebed07ea/300x450">
+                    <img class="images" src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/cf1970bc-3f08-4e0e-a095-2fb57c3aa7c6/300x450">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerpopup" id="pop_up">
+        <span class="textpopup">Личный кабинет</span>
+        <div class="profilepopup">
+            <div>
+                <img class="photopopup" src="https://avatars.mds.yandex.net/i?id=78094aad676a236d625b34b11e5c74cde9843f55-9849146-images-thumbs&n=13">
+            </div>
+            <div class="datapopup">
+                <span class="text1popup">Логин</span>
+                <span class="text1popup">Почта</span>
+                <span class="text1popup">Фамилия</span>
+                <span class="text1popup">Имя</span>
+            </div>
+        </div>
+        <div class="container2popup">
+            <P class="text2popup">Друзья</P>
+            <P class="text2popup">Настройки</P>
+            <P class="text2popup">Выйти</P>
+        </div>
+        <button class="btnpopup" onclick="back()">Назад</button>
+    </div>
+</body>
+</html>
