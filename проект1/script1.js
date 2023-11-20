@@ -1,37 +1,66 @@
-function  func_pop_up(){
-    document.getElementById("pop_up").style.display = "block";
-    const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML=css;
-
-    addCSS(".container{ filter: blur(10px); }");
-
-};
-function back(){
-    document.getElementById("pop_up").style.display = "none"
-    const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML=css;
-
-    addCSS(".container{ filter: blur(0px); }");
-};
-
-function ChangeTheme(){
-    var link = document.getElementById("theme-link");
-    let lightTheme = "light.css";
-    let darkTheme = "dark.css";
+function add(){
     
-    var currTheme = link.getAttribute("href");
-    var theme = "";
+    let type = document.querySelector("#type").value;
+    if(type == "двоечник"){
+        let new_name = document.querySelector("#name").value;
+        document.querySelector("#name").value = "";
+        document.querySelector("#type").value = "";
+        let item_list = document.querySelector("#items1")
+        let new_item = document.createElement("div");
+        new_item.setAttribute("class", "item")
+    
+        let item_text = document.createElement("p");
+        item_text.setAttribute("class", "name");
+        item_text.innerHTML = new_name;
+    
+        let item_btn = document.createElement("button");
+        item_btn.setAttribute("class", "delete")
+        item_btn.innerHTML = "удалить"
+    
+        new_item.appendChild(item_text)
+        new_item.appendChild(item_btn)
+        item_list.appendChild(new_item)
 
-    if(currTheme == lightTheme)
-    {
-   	 currTheme = darkTheme;
-   	 theme = "dark";
+        item_btn.addEventListener("click", () => {
+            let parent = item_btn.parentNode;
+            parent.parentNode.removeChild(parent);
+        });   
     }
-    else
-    {    
-   	 currTheme = lightTheme;
-   	 theme = "light";
+    else if(type == "Отличник"){
+        let new_name = document.querySelector("#name").value;
+        document.querySelector("#name").value = "";
+        document.querySelector("#type").value = "";
+        let item_list = document.querySelector("#items2")
+        let new_item = document.createElement("div");
+        new_item.setAttribute("class", "item")
+    
+        let item_text = document.createElement("p");
+        item_text.setAttribute("class", "name");
+        item_text.innerHTML = new_name;
+    
+        let item_btn = document.createElement("button");
+        item_btn.setAttribute("id", "delete")
+        item_btn.setAttribute("class", "delete")
+        item_btn.innerHTML = "удалить"
+    
+        new_item.appendChild(item_text)
+        new_item.appendChild(item_btn)
+        item_list.appendChild(new_item)
+
+        item_btn.addEventListener("click", () => {
+            let parent = item_btn.parentNode;
+            parent.parentNode.removeChild(parent);
+        });
     }
-
-    link.setAttribute("href", currTheme);
-
-
+    
 };
+
+let list_two = document.getElementById("items1")
+let list_five = document.getElementById("items2")
+
+function change1(){
+    list_five.appendChild(list_two.querySelector(".item"));
+}  
+function change2(){
+    list_two.appendChild(list_five.querySelector(".item"));
+}

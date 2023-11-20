@@ -5,22 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <script src="script1.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <p class="text1">Введите данные для входа</p>
-    <form class="form">
-      <p class="text2">Вход</p>
-      <input type="text" name="login" placeholder="Логин">
-      <input type="password" name="password" placeholder="Пароль">
-    </form>
-    <div class="btn">
-      <button>Забыли Пароль</button>
-      <button>Регистрация</button>
+    
+    <div class="two">
+      <h1>двоечники</h1>
+      <div class="items" id="items1">
+
+      </div>
     </div>
-    <div class="enter">
-      <a href="page2.html"><button>Вход</button></a>
+
+    <div class="Contbt">
+      <button class="btn" onclick="change1()">>></button>
+      <button class="btn" onclick="change2()"><<</button>
     </div>
+
+    <div class="five">
+      <h1>Отличники</h1>
+      <div class="items" id="items2">
+
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <span>Добавить нового Ученика:</span>
+    <input id="name" type="text" placeholder="Фамили и имя">
+    <input id="type" type="text" placeholder="Отличники/двоечник">
+    <button id="add" onclick="add()">Добавить</button>
   </div>
 </body>
 </html>
