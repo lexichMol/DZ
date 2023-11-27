@@ -1,60 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
 
-.container{
-  margin: auto;
-  width: 1200px;
-  display: flex;
-  justify-content: space-around;
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.two{
-  text-align: center;
-  width: 500px;
-  height: 600px;
-  background-color: rgb(230, 230, 230);
+
+h1 {
+    color: #3498db;
 }
-.five{
-  text-align: center;
-  width: 500px;
-  height: 600px;
-  background-color: rgb(230, 230, 230);
+
+h2 {
+    color: #3498db;
 }
-.btn{
-  width: 60px;
-  font-size: 20px;
-  background-color: rgb(230, 230, 230);
-  border-radius: 20px;
-  margin-top: 20px;
+
+.input-container {
+    margin-bottom: 20px;
 }
-.Contbt{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.item{
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5px;
+
+button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
-.items{
-  background-color: rgb(73, 73, 73);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 400px;
+
+ul {
+    list-style: none;
+    padding: 0;
 }
-.name{
-  color: white;
-  width: 200px;
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
-.delete{
-  width: 200px;
-  color: white;
-  background-color: rgb(94, 91, 91);
+
+button.delete-btn {
+    background-color: #e74c3c;
 }
-.menu{
-  width: 800px;
-  margin-top: 20px;
-  margin-left: 250px;
-  display: flex;
-  justify-content: space-around;
+
+.completed {
+    background-color: #c7f1c7;
 }
+
