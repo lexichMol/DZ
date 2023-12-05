@@ -1,45 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const taskInput = document.querySelector("#taskInput");
-    const addTaskBtn = document.querySelector("#addTaskBtn");
-    const taskList = document.querySelector("#taskList");
-    const importantTaskList = document.querySelector("#importantTaskList");
-    addTaskBtn.addEventListener('click', () => {
-        taskInput.value.trim() != "" &&
-            (() => {
-                const newTask = createTaskElement(taskInput.value, moveToImportant);
-                taskList.appendChild(newTask);
-            })();
-        taskInput.value = "";
-    });
 
-    const createTaskElement = (text, moveHandler) => {
-        const newTask = document.createElement("li");
-        const taskText = document.createTextNode(text);
-        const deleteButton = createButton("Удалить", () => deleteTask(newTask));
-        const moveToImportantButton = createButton("Важно!", () => moveHandler(newTask));
-        newTask.appendChild(taskText);
-        newTask.appendChild(deleteButton);
-        newTask.appendChild(moveToImportantButton);
-        newTask.addEventListener('click', () => {
-            newTask.classList.toggle('completed');
-        });
-        return newTask;
-    };
-        
-    const createButton = (text, clickHandler) => {
-        const button = document.createElement("button");
-        button.appendChild(document.createTextNode(text));
-        button.addEventListener('click', clickHandler);
-        return button;
-    };
+function send(){
+    let mes_text = document.getElementById("in").value
+    document.getElementById("in").value = ""
+    let cont = document.getElementById("massages")
 
-    const moveToImportant = (task) => {
-        const importantTask = createTaskElement(task.firstChild.nodeValue, deleteTask);
-        importantTaskList.appendChild(importantTask);
-        taskList.removeChild(task);
-    };
+    let new_mes = document.createElement("div")
+    new_mes.setAttribute("id", "mes")
 
-    const deleteTask = (task) => {
-        task.parentNode.removeChild(task);
-    }
-});
+    let new_user = document.createElement("span")
+    new_user.innerHTML = 'User 1'
+    new_user.setAttribute("id", "user")
+
+    let new_text = document.createElement("span")
+    new_text.innerHTML = mes_text
+    new_text.setAttribute("id", "text")
+
+    new_mes.appendChild(new_user)
+    new_mes.appendChild(new_text)
+    cont.appendChild(new_mes)
+}
