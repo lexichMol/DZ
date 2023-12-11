@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</head>
+
+
+
+<body>
+    <div class="head">
+        <span class="reg"><a href="/login">Регистрация</a></span>
+        <span class="in"><a href="/registration">Войти</a></span>
+    </div>
+    <div class="info">
+        <div class="container">
+            <div class="text">
+                <h2>Как пользоваться картой</h2>
+                <p>text......</p>
+            </div>
+        </div>
+        <img src="{{ url_for('static', filename='images/vdnx.jpg') }}" width="300px" height="300px" class="b">
+    </div>
+
+    <div class="map">
+        <h2>Выберите объект на карте</h2>
+        <ul>
+            <li>поиск</li>
+            <li>Построить маршрут</li>
+            <li>Достопремечаельности</li>
+        </ul>
+        <img src="{{ url_for('static', filename='images/karta-vdnh.jpg') }}" width="70%" height="600px" class="a">
+    </div>
+</body>
+</html>

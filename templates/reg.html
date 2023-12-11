@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/stylereg.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="main">
+        <h1>Зарегистрируйтесь</h1>
+        <input type="text" placeholder="придумайте логин">
+        <input type="text" placeholder="Фамили и имя">
+        <input type="text" placeholder="введите email">
+        <input type="text" placeholder="придумайте пароль">
+        <input type="text" placeholder="повторите пароль">
+        <div class="check">
+            <input type="checkbox">
+            <span>я принимаю условия</span>
+        </div>
+
+        <a href="/about"><button class="btn">войти</button></a>
+    </div>
+</body>
+</html>
