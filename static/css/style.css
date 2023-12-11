@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(209, 209, 209);
+}
+.head{
+    width: 100%;
+    height:100px;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.reg{
+    margin-right: 10px;
+}
+.in{
+    margin-right: 20px;
+}
+.info{
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container{
+    background-color: white;
+    margin-right: 20px;
+}
+ul {
+    list-style: none;
+    margin: 0 auto;
+  }
+.map{
+    text-align: center;
+}
+
+li{
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
