@@ -4,31 +4,23 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', "POST"])
 def registration():
-    if (request.form.get("I") != None or request.form.get("T") != None) and request.form.get("name") != None:
+    if request.method == "GET":
+        return render_template("index.html")
+    if request.method == "POST":
+        login = request.form.get("login")
+        psw = request.form.get("password")
+        if login == "admin" and psw == "admin":
+            return render_template("admin.html")
+        else:
+            return render_template("user.html")
 
-        return redirect(url_for("task"))
-    print(request.form.get("name"))
-    print(request.form.get("I"))
-    print(request.form.get("T"))
-    return render_template("index.html")
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
 
-@app.route("/task", methods=['GET', "POST"])
-def task():
-
-    if request.form.get("intest1") == "10" and request.form.get("intest2") == "5":
-        return redirect(url_for("ok"))
-    elif request.form.get("intest1") != None and request.form.get("intest2") != None:
-        return redirect(url_for("no"))
-
-    return render_template("task.html")
-
-@app.route("/ok")
-def ok():
-    return render_template("ok.html")
-
-@app.route("/no")
-def no():
-    return render_template("no.html")
+@app.route("/user")
+def user():
+    return render_template("user.html")
 
 
 
