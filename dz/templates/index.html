@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+
+    <title>Регистрация и вход</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Введите данные</h2>
+            <form method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="patronymic">Отчество</label>
+                <input type="text" id="patronymic" name="patronymic" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+
+
+
