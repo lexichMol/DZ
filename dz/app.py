@@ -60,13 +60,13 @@ def index():
     if request.method == "POST":
 
         name = request.form.get("name")
-        surname = request.form.get("surname")
-        patronymic = request.form.get("patronymic")
+        telephone = request.form.get("telephone")
+
         guest = Guest.query.all()
 
         for i in guest:
-            if name == i.name and surname == i.surname and patronymic == i.patronymic:
-                return "«такой гость проживает в отеле"
+            if name == i.name and telephone == i.phone_number:
+                return "такой гость проживает в отеле"
 
         return "извините, гость с указанными данными не найден"
 
