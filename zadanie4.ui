@@ -14,31 +14,38 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>60</x>
       <y>50</y>
-      <width>314</width>
-      <height>266</height>
+      <width>651</width>
+      <height>361</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTimeEdit" name="timeEdit"/>
+       </item>
+       <item>
+        <widget class="QCalendarWidget" name="calendarWidget"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Добавить событие</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QCalendarWidget" name="calendarWidget"/>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Добавить событие</string>
-       </property>
-      </widget>
+      <widget class="QTextEdit" name="textEdit"/>
      </item>
     </layout>
    </widget>
